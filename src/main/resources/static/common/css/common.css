@@ -1,0 +1,659 @@
+html{
+	width: 100%;
+	height: 100%;
+}
+
+body{
+	width: 100%;
+	height: 100%;
+}
+
+.header{
+	height: 0px;
+	width: 100%;
+	font-size: 30px;
+	font-family: STXihei, "Microsoft YaHei";
+	font-family: STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑";
+	background-color: #eee;
+}
+
+.footer{
+	height: 20px;
+	width: 100%;
+	color: grey;
+	font-size: 14px;
+}
+
+.mainContent{
+	height: calc(100% - 0px - 20px);
+	width: 100%;
+    display: -webkit-flex; /* Safari */
+	display: flex;
+}
+
+.left{
+	height: 100%;
+	width: 180px;
+	float: left;
+	overflow: auto;
+	/*flex: 1;*/
+	border: 1px solid #eee;
+	border-radius: 5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	/*background-color: red;*/
+}
+
+.left-top{
+	height: calc(100% - 310px);
+	width: 100%;
+	overflow: auto;
+	border: 1px solid #eee;
+	border-radius: 5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	/*background-color: #341278;*/
+}
+
+.left-bottom{
+	height: 310px;
+	width: 100%;
+	overflow: auto;
+	border: 1px solid #eee;
+	border-radius: 5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	/*background-color: #111688;*/
+}
+
+.middle{
+	height: 100%;
+	float: left;
+	display: none;
+	/*overflow: auto;*/
+	flex: 3;
+	border: 1px solid #eee;
+	border-radius: 5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	/*background-color: green;*/
+}
+
+.right{
+	height: 100%;
+	float: right;
+	flex: 5;
+	border: 1px solid #eee;
+	border-radius: 5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	/*background-color: blue;*/
+}
+
+.right-top{
+	width: calc(100% - 20px);
+	height: 463px;
+	border: 1px solid #eee;
+	border-radius: 5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	position: relative;
+	/*background-color: #341256;*/
+}
+
+.right-top-multi-line{
+	width: calc(100% - 20px); 
+	height: 463px;
+	border: 1px solid #eee;
+	border-radius: 5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	position: relative;
+	margin-bottom:10px;
+}
+
+.right-top-single-line{
+	width: 100%;
+	height: 463px;
+	border: 1px solid #eee;
+	border-radius: 5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	position: relative;
+	/*background-color: #341256;*/
+}
+
+.right-bottom{
+	width: 100%;
+	height: calc(100% - 461px);
+	/*overflow: auto;*/
+    display: -webkit-flex; /* Safari */
+	display: flex;
+	border: 1px solid #eee;
+	border-radius: 3px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	/*background-color: #125690;*/
+}
+
+.right-bottom-left{
+	flex: 1;
+	height:100%;
+	float: left;
+	border: 1px solid #eee;
+	border-radius: 3px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	/*background-color: red;*/
+}
+
+.right-bottom-right{
+	width: 450px;
+	height: 100%;
+	border: 1px solid #eee;
+	border-radius: 3px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	/*background-color: green;*/
+}
+
+.right-bottom-right-middle{
+	width: 100%;
+	height: 200px;
+	border: 1px solid #eee;
+	border-radius: 5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+    display: -webkit-flex; /* Safari */
+	display: flex;
+	/*background-color: #908712;*/
+}
+
+.right-bottom-right-middle-left{
+	flex: 1;
+	height: 100%;
+	overflow: auto;
+	border: 1px solid #eee;
+	border-radius: 5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	/*background-color: #567812;*/
+}
+
+.right-bottom-right-middle-right{
+	flex: 1;
+	height: 100%;
+	overflow: auto;
+	border: 1px solid #eee;
+	border-radius: 5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	/*background-color: #563312;*/
+}
+
+.right-bottom-right-bottom{
+	width: 100%;
+	/* height: calc(100% - 200px); */
+	height: 100%;
+	/*overflow-y: auto;*/
+	border: 1px solid #eee;
+	border-radius: 5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+}
+.lineHeader{
+	text-align: center;
+}
+
+.lineTr{
+	text-align: left;
+}
+.left-bottle-count{
+	text-align: left;
+}
+.except-info{
+	color: #CD3700 !important;
+	background-color: #d6d1d1 !important;
+	margin-top:3px;
+	/* margin-left: 20px !important; */
+}
+
+.no-margin{
+	margin: 0px 0px 0px 0px !important;
+}
+
+.no-padding{
+	padding: 0px 0px 0px 0px !important;
+}
+
+.full-content{
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.table>thead>tr>th,.table>tbody>tr>td{
+	padding: 4px !important;
+}
+.line-monitor-canvas{
+	width:100%;
+	text-align: center;
+	vertical-align: middle;
+	position: relative;
+	margin-bottom: 5px;
+	border: 1px solid #c9c9c9;
+}
+/*竹节图指标数据all   */  
+.topDataAll{
+	border: ridge #D8D8D8 1px;
+	width:100%;
+	height:30px;
+	background-color: #FBFBFB;
+	position: absolute;
+}
+/*总配车数*/
+.allBusCount{
+	position: absolute;
+	width: 130px;
+	left: 0px;
+	top: 3px;
+	text-align: left;
+	margin-left: 10px;
+	font: bold 11px arial;
+}
+.all-bus-body{
+	font-size: 16px;
+}
+/*路牌*/
+.partCount{
+	position: absolute;
+	width: 130px;
+	left: 135px;
+	top: 3px;
+	text-align: left;
+	font: bold 11px arial;
+}
+.part-body{
+	font-size: 16px;
+}
+/*运营车辆*/
+.runBusCount{
+	position: absolute;
+	width: 130px;
+	left: 230px;
+	top: 3px;
+	text-align: left;
+	padding: 2px 0px 0px 10px;
+	font: bold 11px arial;
+}
+.run-bus-body{
+	font-size: 16px;
+}
+/*上行车辆*/
+.upBusCount{
+	position: absolute;
+	width: 130px;
+	left: 360px;
+	top: 3px;
+	text-align: left;
+	padding: 2px 0px 0px 10px;
+	font: bold 11px arial;
+}
+.up-bus-body{
+	font-size: 16px;
+}
+/*下行车辆*/
+.downBusCount{
+	position: absolute;
+	width: 130px;
+	left: 490px;
+	top: 3px;
+	text-align: left;
+	padding: 2px 0px 0px 10px;
+	font: bold 11px arial;
+}
+.down-bus-body{
+	font-size: 16px;
+}
+/*上行速度*/
+.upSpeed{
+	position: absolute;
+	width: 150px;
+	left: 620px;
+	top: 3px;
+	text-align: left;
+	padding: 2px 0px 0px 10px;
+	font: bold 11px arial;
+}
+.up-speed-body{
+	font-size: 16px;
+}
+/*下行速度*/
+.downSpeed{
+	position: absolute;
+	width: 150px;
+	left: 770px;
+	top: 3px;
+	text-align: left;
+	padding: 2px 0px 0px 10px;
+	font: bold 11px arial;
+}
+.down-speed-body{
+	font-size: 16px;
+}
+/*已出车*/
+.finishedBusCount{
+	position: absolute;
+	width: 130px;
+	left: 920px;
+	top: 3px;
+	text-align: left;
+	padding: 2px 0px 0px 10px;
+	font: bold 11px arial;
+}
+.finished-bus-body{
+	font-size: 16px;
+}
+/*出车率*/
+.finishedBusRate{
+	position: absolute;
+	width: 130px;
+	left: 1025px;
+	top: 3px;
+	text-align: left;
+	padding: 2px 0px 0px 10px;
+	font: bold 11px arial;
+}
+.finished-bus-rate-body{
+	font-size: 16px;
+}
+.count-title{
+	font-size: 15px;
+}
+
+.count-body{
+	font-size: 16px;
+}
+
+.count-unit{
+	font-size: 15px;
+}
+/*在场车辆*/
+.busInField{
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	left: 0px;
+	top: 250px;
+	text-align: left;
+	padding: 0px 0px 5px 0px;
+	font-family: STXihei, "Microsoft YaHei";
+	font-family: STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑";
+	background-image: url(../images/blueBus.png) no-repeat 5px 5px;
+}
+
+.busInField-title{
+	font-size: 19px;
+}
+/*线路监控区域切换按钮*/
+.line-change-tool{
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	right: 5px;
+	top: 4.5px;
+	color: #0099CC;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #E8F9FF;
+	border: 1px solid #E8F9FF;
+	border-radius: 3px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	font-size: 20px;
+	z-index: 2;
+}
+/*考勤*/
+.signInOut-tool{
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	right: 35px;
+	top: 4.5px;
+	color: #0099CC;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #E8F9FF;
+	border: 1px solid #E8F9FF;
+	border-radius: 3px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	font-size: 20px;
+	z-index: 2;
+}
+/*新增事件工具*/
+.addEvent-tool{
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	right: 65px;
+	top: 4.5px;
+	color: #0099CC;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #E8F9FF;
+	border: 1px solid #E8F9FF;
+	border-radius: 3px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	font-size: 20px;
+	z-index: 2;
+}
+/* 切换线路类型 */
+.changeLineTypes-tool{
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	right: 95px;
+	top: 4.5px;
+	color: #0099CC;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #E8F9FF;
+	border: 1px solid #E8F9FF;
+	border-radius: 3px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	font-size: 20px;
+	z-index: 2;
+}
+/* 流水发车开关量 */
+.dispatchFlowOff-tool{
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	right: 155px;
+	top: 4.5px;
+	color: red;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #E8F9FF;
+	border: 1px solid #E8F9FF;
+	border-radius: 3px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	font-size: 20px;
+	z-index: 2;
+}
+.dispatchFlowOn-tool{
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	right: 155px;
+	top: 4.5px;
+	color: #00D200;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #E8F9FF;
+	border: 1px solid #E8F9FF;
+	border-radius: 3px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	font-size: 20px;
+	z-index: 2;
+}
+/* 流水发车设置 */
+.dispatchFlowSetting-tool{
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	right: 125px;
+	top: 4.5px;
+	color: #0099CC;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #E8F9FF;
+	border: 1px solid #E8F9FF;
+	border-radius: 3px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	font-size: 20px;
+	z-index: 2;
+}
+/*线路监控鼠标移动时的弹出框*/
+.line-canvas-info-win{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: none;
+	background-color: #CCCCCC;
+	border: 1px solid #eee;
+	border-radius: 3px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	z-index: 10;
+}
+
+/*canvas上提示信息标题*/
+.line-canvas-info-win-header{
+	background-color: #D2D2D2;
+	height:25px;
+}
+
+.line-canvas-info-win-title{
+	color: #000000;
+	font-size: 18px;
+	font-weight: bolder; 
+	/* font:30px bolder 'microsoft yahei'; */
+}
+
+.line-canvasfour-info-win-title{
+	color: #000000;
+	font-size: 18px;
+	font-weight: bolder; 
+	/* font:30px bolder 'microsoft yahei'; */
+}
+
+.line-canvas-info-win-close{
+	float:right;
+	font-size:18px;
+	color:#000000;
+}
+
+/*canvas上提示信息消息体*/
+.line-canvas-info-win-table{
+	background-color: #EBEBEB;
+	/* height:calc(100% - 25px - 22px); */
+	height:calc(100% - 25px );
+	overflow-y:auto;
+	text-align: left;
+	font-size:12px;
+}
+
+/*canvas上提示信息窗口小工具按钮*/
+.line-canvas-info-win-tools{
+	background-color: #E3E3E3;
+	height:22px;
+	font-size:18px;
+	text-align: left;
+	padding:0px 5px 0px 5px;
+}
+
+.line-canvas-info-win-tools-color{
+	color:white;
+	margin: 1px 5px 0 1px;
+}
+
+.overdue{
+	background-color: #dbddde !important;
+}
+
+/*竹节图类型切换*/
+.line-types-info-win{
+	display:none;
+	width:120px;
+	height:140px;
+	position: absolute;
+	top:31px;
+	right:100px;
+	z-index:1;
+	background-color:#EBEBEB;
+	overflow-y:auto;
+	opacity:0.9;
+	border-radius:10px;
+	font:14px arial;
+}
+/*线路监控底部展示区*/
+.bottomData{
+	width: 430px;
+	height: 40px;
+	bottom: 20px;
+	text-align: left;
+	padding: 2px 0px 0px 10px;
+	font: bold 11px arial;
+	border:2px solid #0099CC;
+	line-height:40px
+}
+.upField{
+	position: absolute;
+	left:0px;
+}
+.nonOperation{
+	position: absolute;
+	left:430px;
+}
+.offline{
+	position: absolute;
+	left:860px;
+}
+.downField{
+	position: absolute;
+	left:1290px;
+}
+.heart-mark{
+	background:url("../images/heart-open.png") no-repeat;
+	display:inline-block;
+	width:16px;
+	height:14px;
+	margin-top:5px;
+}
+.heart-unmark{
+	background:url("../images/heart-close.png") no-repeat;
+	display:inline-block;
+	width:16px;
+	height:14px;
+	margin-top:5px;
+}
+.emergency-situation{
+	background:url("../images/emergency-on.png") no-repeat !important;
+	display:inline-block;
+	width:60px;
+	height:60px;
+	/* width: 50px;height: 50px; */
+}
+
+.normal-situation{
+	background:url("../images/emergency-off.png") no-repeat;
+	display:inline-block;
+	width:60px;
+	height:60px;
+}

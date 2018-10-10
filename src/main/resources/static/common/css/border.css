@@ -1,0 +1,76 @@
+/**
+* 首页宫格布局
+* 左侧显示区  右侧上下结构显示区域
+*/
+
+* {
+	margin: 0;
+	padding: 0
+}
+
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	font-family: "宋体", "微软雅黑";
+}
+
+:root{
+	--left-width:16%;
+	--middle-width:84%;
+	--middle-center:80vh;
+	--middle-bottom:20vh;
+}
+
+/*左侧显示区*/
+.left{
+	float: left;
+	width: var(--left-width);
+	height: 100%;
+	background-color: rgba(200, 3, 3, 0.3);
+}
+/*左侧隐藏按钮区*/
+.leftBtnContainer{
+	float: left;
+	width: 12px;
+	height: 100%;
+	vertical-align: middle;
+	text-align: center;
+	background-color: rgba(100, 100, 100, 0.3);
+}
+/*左侧按钮*/
+.leftBtn{
+	padding-top: calc(50vh - 6px);
+}
+/*右侧显示区*/
+.middle{
+	float: right;
+	width: calc(var(--middle-width) - 12px);
+	height: 100%;
+	background-color: rgba(6, 206, 6, 0.3);
+	position: relative;
+}
+/*右侧中间显示区*/
+.middleCenter{
+	width: 100%;
+	height: calc(var(--middle-center) - 12px);
+	background-color: rgba(206, 206, 200, 0.3);
+}
+/*右侧底部按钮显示区*/
+.middleBottomContainer{
+	width: 100%;
+	height: 12px;
+	vertical-align: middle;
+	background-color: rgba(100, 100, 100, 0.3);
+}
+/*右侧底部按钮*/
+.middleBottomBtn{
+	padding-left: calc(50% - 6px);
+}
+/*右侧底部显示区*/
+.middleBottom{
+	width: 100%;
+	height: var(--middle-bottom);
+	background-color: rgba(256, 306, 6, 0.3);
+}
